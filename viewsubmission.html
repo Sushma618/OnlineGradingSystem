@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Submissions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>View Submissions</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="teacherdashboard.html">Dashboard</a></li>
+            <li><a href="uploadassignment.html">Upload Assignment</a></li>
+            <li><a href="viewsubmission.html" class="active">View Submissions</a></li>
+            <li><a href="gradesfeedback.html">Provide Grades & Feedback</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <section class="content">
+        <h2>All Submissions</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Assignment Title</th>
+                    <th>Submission Date</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example Row -->
+                <tr>
+                    <td>John Doe</td>
+                    <td>Assignment 1</td>
+                    <td>2024-09-15</td>
+                    <td><a href="path/to/submission.pdf" class="btn">Download</a></td>
+                </tr>
+                <!-- Dynamic rows should be populated here via backend -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Assignment Submission System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

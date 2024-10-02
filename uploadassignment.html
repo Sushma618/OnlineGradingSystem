@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function redirectToDashboard() {
+            // Perform your form validation and submission here if needed
+
+            // Redirect to the teacher dashboard after submission
+            window.location.href = 'teacherdashboard.html';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Upload New Assignment</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="teacherdashboard.html">Dashboard</a></li>
+            <li><a href="uploadassignment.html" class="active">Upload Assignment</a></li>
+            <li><a href="viewsubmission.html">View Submissions</a></li>
+            <li><a href="gradesfeedback.html">Provide Grades & Feedback</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <section class="content">
+        <form onsubmit="event.preventDefault(); redirectToDashboard();">
+            <label for="assignment-title">Assignment Title:</label>
+            <input type="text" id="assignment-title" name="title" required>
+
+            <label for="assignment-description">Description:</label>
+            <textarea id="assignment-description" name="description" rows="4" required></textarea>
+
+            <label for="due-date">Due Date:</label>
+            <input type="date" id="due-date" name="due_date" required>
+
+            <label for="assignment-file">Upload File:</label>
+            <input type="file" id="assignment-file" name="assignment_file" accept=".pdf,.doc,.docx" required>
+
+            <button type="submit" class="btn">Upload Assignment</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Assignment Submission System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effortless Assignment Submissions & Grading</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .hero {
+            padding: 50px;
+            background-color: #eef3f7;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hero .hero-text {
+            flex: 1;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .hero .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero .hero-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .clients {
+            padding: 50px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .client-logos img {
+            margin: 0 20px;
+        }
+
+        .features {
+            padding: 50px;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .feature {
+            text-align: center;
+            width: 30%;
+        }
+
+        .stats {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .stats .stat {
+            display: inline-block;
+            margin: 20px;
+            width: 20%;
+        }
+
+        .testimonials {
+            padding: 50px;
+            background-color: #eef3f7;
+            text-align: center;
+        }
+
+        .testimonials .testimonial {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .footer-nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .clients-section {
+            text-align: center;
+            padding: 50px;
+            background-color: #fff;
+        }
+
+        .clients-section h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .clients-section p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .client-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .client-logos img {
+            max-height: 50px;
+        }
+
+        .main-heading {
+            font-size: 30px;
+            margin: 40px 0 20px;
+            font-weight: bold;
+        }
+
+        .sub-heading {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .features-section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding-bottom: 50px;
+        }
+
+        .feature-box {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .feature-box img {
+            max-height: 50px;
+            margin-bottom: 20px;
+        }
+
+        .feature-box h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .feature-box p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            background-color: #fff;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .hero-content a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .hero-content a:hover {
+            background-color: #218838;
+        }
+
+        .hero-image {
+            flex-shrink: 0;
+            margin-right: 50px;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 900px) {
+            .hero-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-image {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+
+                /* Milestones Section Styles */
+        .milestones-container {
+            text-align: center;
+            padding: 50px;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        .milestones-container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .milestones-container .highlight {
+            color: #28a745;
+        }
+
+        .milestones-container p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .milestones {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .milestone {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+            margin: 15px;
+        }
+
+        .milestone .icon {
+            font-size: 2.5rem;
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+
+        .milestone h2 {
+            font-size: 2rem;
+            margin: 0;
+            color: #333;
+        }
+
+        .milestone p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .milestones {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .milestone {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Blog Section Styles */
+        .blog-section {
+            padding: 50px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .blog-header h2 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .blog-header p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .blog-cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #f5f7fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 30%;
+            text-align: left;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .card-content .read-more {
+            font-size: 1rem;
+            color: #28a745;
+            text-decoration: none;
+        }
+
+        .card-content .read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .blog-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #19232d;
+            padding: 40px 0;
+            color: #fff;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-logo img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+
+        .footer-logo p {
+            font-size: 0.9rem;
+            color: #fff;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin-right: 10px;
+        }
+
+        .social-icons img {
+            width: 30px;
+        }
+
+        .footer-links h4 {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links ul li a {
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        .footer-links ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-subscribe h4 {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .footer-subscribe form {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-subscribe input {
+            padding: 10px;
+            border: none;
+            border-radius: 30px;
+            outline: none;
+            width: 220px;
+            background-color: #2e3a45;
+            color: #fff;
+            margin-right: 10px;
+        }
+
+        .footer-subscribe button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .footer-subscribe button img {
+            width: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer-links,
+            .footer-subscribe {
+                margin-top: 20px;
+            }
+        }
+
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        body {
+        font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+        display: flex;
+        align-items: center;
+        }
+
+        .logo img {
+        width: 40px;
+        margin-right: 10px;
+        }
+
+        .logo span {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        }
+
+        .nav-links {
+        list-style: none;
+        display: flex;
+        }
+
+        .nav-links li {
+        margin-left: 20px;
+        }
+
+        .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+        color: #007bff;
+        }
+
+        .login-buttons {
+        display: flex;
+        align-items: center;
+        }
+
+        .btn {
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        margin-left: 10px;
+        }
+
+        .educator-btn {
+        background-color: #4caf50;
+        color: white;
+        }
+
+        .educator-btn:hover {
+        background-color: #45a049;
+        }
+
+        .student-btn {
+        background-color: transparent;
+        color: #4caf50;
+        border: 1px solid #4caf50;
+        }
+
+        .student-btn:hover {
+        background-color: #4caf50;
+        color: white;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+              <img src="images/logo1.jpg" alt="GradeMate Logo">
+              <span>GradeMate</span>
+            </div>
+            <div class="login-buttons">
+              <a href="teacherlogin.html" class="btn educator-btn">Login as educator</a>
+              <a href="studentlogin.html" class="btn student-btn">login as student</a>
+            </div>
+          </nav>
+          
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Effortless Assignment Submissions & Grading</h1>
+                <p>Manage all your assignments and grading in a single platform.</p>
+                <a href="#" class="cta-button">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/pic1.jpg" alt="Assignment Platform Image">
+            </div>
+        </section>
+    </header>
+
+    <section class="clients-section">
+        <h2>Our Clients</h2>
+        <p>We collaborate with top educational institutions to enhance learning and streamline workflows.</p>
+    
+        <div class="client-logos">
+            <img src="images/c1.jpg" alt="Client 1">
+            <img src="images/c2.jpg" alt="Client 2">
+            <img src="images/c3.jpg" alt="Client 3">
+            <img src="images/c4.jpg" alt="Client 4">
+            <img src="images/c5.jpg" alt="Client 5">
+        </div>
+    
+        <div class="main-heading">Manage all your assignments and grading in a single platform</div>
+        <div class="sub-heading">Who is GradeMate suitable for?</div>
+    
+        <div class="features-section">
+            <div class="feature-box">
+                <img src="images/studenticon.png" alt="Students Icon">
+                <h3>Students</h3>
+                <p>Our platform allows students to submit assignments easily, track deadlines, and receive grades and feedback in real time.</p>
+            </div>
+            <div class="feature-box">
+                <img src="images/teachericon.png"Teachers Icon">
+                <h3>Teachers</h3>
+                <p>Teachers can upload assignments, grade submissions, and provide feedback efficiently, all in one place.</p>
+            </div>
+            <div class="feature-box">
+                <img src="images/institutionicon.png" alt="Institutions Icon">
+                <h3>Institutions</h3>
+                <p>Our system helps institutions streamline assignment management, ensuring transparency and efficiency in both teaching and learning.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero-section">
+        <div class="hero-image">
+            <img src="images/pic2.jpg" alt="Platform Illustration">
+        </div>
+        <div class="hero-content">
+            <h1>Streamlining Your Academic Journey with Our Platform</h1>
+            <p>Discover how our platform transforms the way students and teachers engage with assignments. Our user-friendly interface simplifies assignment submissions, grading, and feedback, ensuring that both students and educators have a seamless experience.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </section>
+
+    <section class="milestones-container">
+        <h1>Transforming Education with <span class="highlight">Our Innovative Platform</span></h1>
+        <p>We have achieved remarkable milestones in enhancing the educational experience:</p>
+    
+        <div class="milestones">
+            <div class="milestone">
+                <div class="icon">&#128101;</div> <!-- Replace with actual icon -->
+                <h2>100,000+</h2>
+                <p>Students Served</p>
+            </div>
+            <div class="milestone">
+                <div class="icon">&#128073;</div> <!-- Replace with actual icon -->
+                <h2>2,000+</h2>
+                <p>Courses Offered</p>
+            </div>
+            <div class="milestone">
+                <div class="icon">&#128077;</div> <!-- Replace with actual icon -->
+                <h2>500,000+</h2>
+                <p>Assignments Submitted</p>
+            </div>
+            <div class="milestone">
+                <div class="icon">&#128179;</div> <!-- Replace with actual icon -->
+                <h2>1,200,000+</h2>
+                <p>Feedback Provided</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="blog-section">
+        <div class="blog-header">
+            <h2>Empowering Education with Seamless Assignment Management</h2>
+            <p>The GradeMate blog is your go-to source for the latest updates on educational technology, assignment workflows, and more. See how institutions are optimizing their teaching processes, learn how students are improving their submission experience, and explore best practices.</p>
+        </div>
+    
+        <div class="blog-cards">
+            <div class="card">
+                <img src="images/pic3.jpeg" alt="Blog Image 1">
+                <div class="card-content">
+                    <h3>Creating Efficient Assignment Review Systems with GradeMate</h3>
+                    <a href="#" class="read-more">Readmore →</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="images/pic4.jpeg" alt="Blog Image 2">
+                <div class="card-content">
+                    <h3>Understanding Your Role in Student Feedback and Progress Tracking</h3>
+                    <a href="#" class="read-more">Readmore →</a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="images/pic5.jpeg" alt="Blog Image 3">
+                <div class="card-content">
+                    <h3>Revamping Submission and Grading for University-Level Courses</h3>
+                    <a href="#" class="read-more">Readmore →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo2.jpg" alt="GradeMate Logo">
+                <p>Copyright © 2020 GradeMate ltd.<br>All rights reserved</p>
+                <div class="social-icons">
+                    <a href="#"><img src="images/insta.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/dribble.png" alt="Dribbble"></a>
+                    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">Terms of service</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Status</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-subscribe">
+                <h4>Stay up to date</h4>
+                <form action="#">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">
+                        <img src="images/send.png" alt="Send Icon">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Deadlines</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Track Assignment Deadlines</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="studentdashboard.html">Dashboard</a></li>
+            <li><a href="submitassignment.html">Submit Assignment</a></li>
+            <li><a href="viewgradesfeedback.html">View Grades & Feedback</a></li>
+            <li><a href="trackdeadlines.html" class="active">Track Deadlines</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <section class="content">
+        <h2>Upcoming Deadlines</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Assignment Title</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example Rows -->
+                <tr>
+                    <td>Assignment 2</td>
+                    <td>2024-10-10</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>Assignment 3</td>
+                    <td>2024-10-20</td>
+                    <td>Pending</td>
+                </tr>
+                <!-- Dynamic rows should be populated here via backend -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Assignment Submission System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Simple logout script
+        window.onload = function() {
+            // Clear any stored session data (if applicable)
+            localStorage.removeItem('loggedIn');
+            // Redirect to home page after logout
+            setTimeout(function() {
+                window.location.href = 'index.html';
+            }, 2000);
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Logout</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="teacherlogin.html">Teacher Login</a></li>
+            <li><a href="studentlogin.html">Student Login</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <p>You have been successfully logged out. Redirecting to the home page...</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Assignment Submission System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

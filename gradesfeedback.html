@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provide Grades & Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Provide Grades & Feedback</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="teacherdashboard.html">Dashboard</a></li>
+            <li><a href="uploadassignment.html">Upload Assignment</a></li>
+            <li><a href="view-submission.html">View Submissions</a></li>
+            <li><a href="gradesfeedback.html" class="active">Provide Grades & Feedback</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <section class="content">
+        <h2>Grade a Submission</h2>
+        <form id="grades-feedback-form" action="grade-feedback-servlet" method="POST">
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name" name="student_name" readonly value="John Doe">
+
+            <label for="assignment-title">Assignment Title:</label>
+            <input type="text" id="assignment-title" name="assignment_title" readonly value="Assignment 1">
+
+            <label for="grade">Grade:</label>
+            <input type="number" id="grade" name="grade" min="0" max="100" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Submit Grade & Feedback</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Assignment Submission System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

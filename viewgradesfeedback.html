@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Grades & Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>View Grades & Feedback</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="studentdashboard.html">Dashboard</a></li>
+            <li><a href="submitassignment.html" class="active">Submit Assignment</a></li>
+            <li><a href="viewgradesfeedback.html">View Grades & Feedback</a></li>
+            <li><a href="trackdeadlines.html">Track Deadlines</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <section class="content">
+        <form id="grades-feedback-form">
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name" name="student_name" readonly value="John Doe">
+
+            <label for="assignment-title">Assignment Title:</label>
+            <input type="text" id="assignment-title" name="assignment_title" readonly value="Assignment 1">
+
+            <label for="grade">Grade:</label>
+            <input type="number" id="grade" name="grade" readonly value="85"> <!-- Example grade -->
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="5" readonly>Your work was good, but I suggest improving the clarity in your explanations.</textarea>
+
+            <button type="button" class="btn" onclick="window.history.back();">Back</button> <!-- Button to navigate back -->
+        </form>
+    </section>
+</body>
+</html>

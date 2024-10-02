@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Submit Your Assignment</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="studentdashboard.html">Dashboard</a></li>
+            <li><a href="submitassignment.html" class="active">Submit Assignment</a></li>
+            <li><a href="viewgradesfeedback.html">View Grades & Feedback</a></li>
+            <li><a href="trackdeadlines.html">Track Deadlines</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <form id="submit-assignment-form">
+            <label for="assignment-id">Assignment ID:</label>
+            <input type="text" id="assignment-id" name="assignment_id" required>
+
+            <label for="student-file">Upload Assignment:</label>
+            <input type="file" id="student-file" name="student_file" accept=".pdf,.doc,.docx" required>
+
+            <button type="submit" class="btn">Submit Assignment</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Assignment Submission System. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const submitForm = document.getElementById("submit-assignment-form");
+
+            submitForm.addEventListener("submit", (event) => {
+                event.preventDefault();  // Prevent the form from submitting in the traditional way
+                
+                // Additional validation can be added here
+
+                // Simulate file submission success and redirect
+                window.location.href = "submissionsuccess.html";
+            });
+        });
+    </script>
+</body>
+</html>
